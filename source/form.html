@@ -35,48 +35,38 @@
         <form class="program-filter__form form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form__questionary">
             <legend class="visually-hidden">Укажите данные</legend>
-            <p>
-              <label for="form-name">Имя:*</label>
-              <input class="form__name-field" type="text" name="name" placeholder="Барсик" id="form-name">
-            </p>
-            <p>
-              <label for="form-weight">Вес (кг):*</label>
-              <input class="form__weight-field" type="number" name="weight" placeholder="7" id="form-weight">
-            </p>
-            <p>
-              <label for="form-age">Возраст (лет):</label>
-              <input class="form__age-field" type="number" name="age" placeholder="7" id="form-age">
-            </p>
+            <label>Имя:*
+              <input class="form__name-field" type="text" name="name" placeholder="Барсик">
+            </label>
+            <label>Вес (кг):*
+              <input class="form__weight-field" type="number" name="weight" placeholder="7">
+            </label>
+            <label>Возраст (лет):
+              <input class="form__age-field" type="number" name="age" placeholder="7">
+            </label>
           </fieldset>
 
           <fieldset class="form__program">
             <legend class="visually-hidden">Программа</legend>
-            <ul class="form__list">
-              <li class="form__item">
-                <input class="visually-hidden form__input-radio" type="radio" name="program" value="slim" id="program-slim" checked>
-                <label for="program-slim">Похудение</label>
-              </li>
-              <li class="form__item">
-                <input class="visually-hidden form__input-radio" type="radio" name="program" value="weight" id="program-weight">
-                <label for="program-weight">Набор массы</label>
-              </li>
-              <li class="form__item">
-                <input class="visually-hidden form__input-radio" type="radio" name="program" value="get-advice" id="advice">
-                <label for="advice">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
+            <label>
+              <input class="visually-hidden form__input-radio" type="radio" name="program" value="slim" checked>Похудение
+            </label>
+            <label>
+              <input class="visually-hidden form__input-radio" type="radio" name="program" value="weight">Набор массы
+            </label>
+            <label>
+              <input class="visually-hidden form__input-radio" type="radio" name="program" value="get-advice">Не знаю (нужен ваш совет)
+            </label>
           </fieldset>
 
           <fieldset class="form__contacts">
             <legend class="form__subtitle">Контактные данные (владельца кота)</legend>
-            <p>
-              <label for="contacts-email">E-mail:*</label>
-              <input class="form__email-field" type="email" name="email" placeholder="kuklachev@gmail.com" id="contacts-email">
-            </p>
-            <p>
-              <label for="contacts-tel">Телефон:*</label>
-              <input class="form__tel-field" type="tel" name="tel" placeholder="8 (960) 900-60-90" id="contacts-tel">
-            </p>
+            <label>E-mail:*
+              <input class="form__email-field" type="email" name="email" placeholder="kuklachev@gmail.com">
+            </label>
+            <label>Телефон:*
+              <input class="form__tel-field" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+            </label>
           </fieldset>
 
           <fieldset class="form__comment">
@@ -86,22 +76,18 @@
 
           <fieldset class="form__additional">
             <legend class="form__subtitle">Дополнительно</legend>
-            <ul class="form__list">
-              <li class="form__item">
-                <input class="visually-hidden form__input-checkbox" type="checkbox" name="sweetener" value="1" id="sweetener" checked>
-                <label for="sweetener">Сахарозаменитель</label>
-              </li>
-              <li class="form__item">
-                <input class="visually-hidden form__input-checkbox" type="checkbox" name="water" value="1" id="water">
-                <label for="water">Питьевая вода</label>
-              </li>
-              <li class="form__item">
-                <input class="visually-hidden form__input-checkbox" type="checkbox" name="milk" value="1" id="milk">
-                <label for="milk">Молоко</label>
-              </li>
-              <li class="form__item">
-                <input class="visually-hidden form__input-checkbox" type="checkbox" name="vitamins" value="1" id="vitamins">
-                <label for="vitamins">Витамины</label>
+            <label>
+              <input class="visually-hidden form__input-checkbox" type="checkbox" name="sweetener" value="1" checked>Сахарозаменитель
+            </label>
+            <label>
+              <input class="visually-hidden form__input-checkbox" type="checkbox" name="water" value="1">Питьевая вода
+            </label>
+            <label>
+              <input class="visually-hidden form__input-checkbox" type="checkbox" name="milk" value="1">Молоко
+            </label>
+            <label>
+              <input class="visually-hidden form__input-checkbox" type="checkbox" name="vitamins" value="1">Витамины
+            </label>
               </li>
             </ul>
           </fieldset>
