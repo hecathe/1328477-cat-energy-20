@@ -1,1 +1,82 @@
-// Начните писать стили здесь
+@color-black: #000000;
+@color-black2: #111111;
+@color-darkgrey: #444444;
+@color-darkgrey2: #222222;
+@color-grey: #F2F2F2;
+@color-white: #ffffff;
+@color-lime: #63A73A;
+@color-lightgreen: #68B738;
+
+/*@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: normal
+  font-display: swap;
+  src:
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+}*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  font-family: "Oswald", "Arial";
+  font-size: 36px;
+  line-height: 36px;
+  color: @color-black;
+}
+
+.button {
+  font-family: "Oswald", "Arial";
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @color-white;
+  background-color: @color-lightgreen;
+}
+
+@import "source/less/header.less";
+
+@import "source/less/nav-list.less";
+
+@import "source/less/preview.less";
+
+@import "source/less/programs.less";
+
+@import "source/less/advantages.less";
+
+@import "source/less/footer.less";
+
+@import "source/less/social-list.less";
+
+@import "source/less/copyright.less";
+
+@import "source/less/catalog.less";
+
+@import "source/less/program-filter.less";
