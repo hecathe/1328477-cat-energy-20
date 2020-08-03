@@ -1,16 +1,7 @@
-@color-black: #000000;
-@color-black2: #111111;
-@color-darkgrey: #444444;
-@color-darkgrey2: #222222;
-@color-grey: #F2F2F2;
-@color-white: #ffffff;
-@color-lime: #63A73A;
-@color-lightgreen: #68B738;
-
-/*@font-face {
+@font-face {
   font-family: "Oswald";
   font-weight: normal;
-  font-style: normal
+  font-style: normal;
   font-display: swap;
   src:
     url("../fonts/oswaldregular.woff2") format("woff2"),
@@ -19,13 +10,20 @@
 
 @font-face {
   font-family: "Oswald";
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
   src:
     url("../fonts/oswaldmedium.woff2") format("woff2"),
     url("../fonts/oswaldmedium.woff") format("woff");
-}*/
+}
+
+.body {
+  min-height: 100%;
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: @color-black;
+}
 
 img {
   max-width: 100%;
@@ -46,14 +44,15 @@ img {
 }
 
 .title {
-  font-family: "Oswald", "Arial";
   font-size: 36px;
   line-height: 36px;
-  color: @color-black;
 }
 
 .button {
-  font-family: "Oswald", "Arial";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -61,13 +60,14 @@ img {
   background-color: @color-lightgreen;
 }
 
-@import "source/less/header.less";
-@import "source/less/nav-list.less";
-@import "source/less/preview.less";
-@import "source/less/programs.less";
-@import "source/less/advantages.less";
-@import "source/less/footer.less";
-@import "source/less/social-list.less";
-@import "source/less/copyright.less";
-@import "source/less/catalog.less";
-@import "source/less/program-filter.less";
+@import "../less/variables.less";
+@import "../less/header.less";
+@import "../less/nav-list.less";
+@import "../less/preview.less";
+@import "programs.less";
+@import "../less/advantages.less";
+@import "../less/footer.less";
+@import "../less/social-list.less";
+@import "../less/copyright.less";
+@import "../less/catalog.less";
+@import "../less/program-filter.less";
