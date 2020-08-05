@@ -1,73 +1,19 @@
-@font-face {
-  font-family: "Oswald";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src:
-    url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-  src:
-    url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
-}
-
-.body {
-  min-height: 100%;
-  margin: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  color: @color-black;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.title {
-  font-size: 36px;
-  line-height: 36px;
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: @color-white;
-  background-color: @color-lightgreen;
-}
-
-@import "../less/variables.less";
-@import "../less/header.less";
-@import "../less/nav-list.less";
-@import "../less/preview.less";
-@import "programs.less";
-@import "../less/advantages.less";
-@import "../less/footer.less";
-@import "../less/social-list.less";
-@import "../less/copyright.less";
-@import "../less/catalog.less";
-@import "../less/program-filter.less";
+@import "./fonts.less";
+@import "./variables.less";
+@import "./global.less";
+@import "./header.less";
+@import "./nav-list.less";
+@import "./preview.less";
+@import "./programs.less";
+@import "./advantages.less";
+@import "./example.less";
+@import "./slider.less";
+@import "./footer.less";
+@import "./address.less";
+@import "./social-list.less";
+@import "./copyright.less";
+@import "./catalog.less";
+@import "./addition.less";
+@import "./gift.less";
+@import "./form.less";
+@import "./program-filter.less";
