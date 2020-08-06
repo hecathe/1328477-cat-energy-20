@@ -1,0 +1,41 @@
+.body {
+  min-height: 100%;
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: @color-black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @color-white;
+  background-color: @color-lightgreen;
+}

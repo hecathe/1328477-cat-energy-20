@@ -34,60 +34,60 @@
         <h2 class="program-filter__title title">Подбор программы</h2>
         <p class="program-filter__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="program-filter__form form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form__questionary">
+          <fieldset class="form__fieldset form__fieldset--questionary">
             <legend class="visually-hidden">Укажите данные</legend>
-            <label>Имя:*
-              <input class="form__name-field" type="text" name="name" placeholder="Барсик">
+            <label class="form__label">Имя:*
+              <input class="form__input form__input--name-field" type="text" name="name" placeholder="Барсик">
             </label>
-            <label>Вес (кг):*
-              <input class="form__weight-field" type="number" name="weight" placeholder="7">
+            <label class="form__label">Вес (кг):*
+              <input class="form__input form__input--weight-field" type="number" name="weight" placeholder="7">
             </label>
-            <label>Возраст (лет):
-              <input class="form__age-field" type="number" name="age" placeholder="7">
+            <label class="form__label">Возраст (лет):
+              <input class="form__input form__input--age-field" type="number" name="age" placeholder="7">
             </label>
           </fieldset>
 
-          <fieldset class="form__program">
+          <fieldset class="form__fieldset form__fieldset--program">
             <legend class="visually-hidden">Программа</legend>
-            <label>
-              <input class="visually-hidden form__input-radio" type="radio" name="program" value="slim" checked>Похудение
+            <label class="form__label">
+              <input class="visually-hidden form__input form__input--radio" type="radio" name="program" value="slim" checked>Похудение
             </label>
-            <label>
-              <input class="visually-hidden form__input-radio" type="radio" name="program" value="weight">Набор массы
+            <label class="form__label">
+              <input class="visually-hidden form__input form__input--radio" type="radio" name="program" value="weight">Набор массы
             </label>
-            <label>
-              <input class="visually-hidden form__input-radio" type="radio" name="program" value="get-advice">Не знаю (нужен ваш совет)
+            <label class="form__label">
+              <input class="visually-hidden form__input form__input--radio" type="radio" name="program" value="get-advice">Не знаю (нужен ваш совет)
             </label>
           </fieldset>
 
-          <fieldset class="form__contacts">
+          <fieldset class="form__fieldset form__fieldset--contacts">
             <legend class="form__subtitle">Контактные данные (владельца кота)</legend>
-            <label>E-mail:*
-              <input class="form__email-field" type="email" name="email" placeholder="kuklachev@gmail.com">
+            <label class="form__label">E-mail:*
+              <input class="form__input form__input--email-field" type="email" name="email" placeholder="kuklachev@gmail.com">
             </label>
-            <label>Телефон:*
-              <input class="form__tel-field" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+            <label class="form__label">Телефон:*
+              <input class="form__input form__input--tel-field" type="tel" name="tel" placeholder="8 (960) 900-60-90">
             </label>
           </fieldset>
 
-          <fieldset class="form__comment">
+          <fieldset class="form__fieldset form__fieldset--comment">
             <legend class="form__subtitle">Комментарий</legend>
             <textarea class="form__comment-field" name="text" placeholder="Расскажите обо всех повaдках кота"></textarea>
           </fieldset>
 
-          <fieldset class="form__additional">
+          <fieldset class="form__fieldset form__fieldset--additional">
             <legend class="form__subtitle">Дополнительно</legend>
-            <label>
-              <input class="visually-hidden form__input-checkbox" type="checkbox" name="sweetener" value="1" checked>Сахарозаменитель
+            <label class="form__label">
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="sweetener" value="1" checked>Сахарозаменитель
             </label>
-            <label>
-              <input class="visually-hidden form__input-checkbox" type="checkbox" name="water" value="1">Питьевая вода
+            <label class="form__label">
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="water" value="1">Питьевая вода
             </label>
-            <label>
-              <input class="visually-hidden form__input-checkbox" type="checkbox" name="milk" value="1">Молоко
+            <label class="form__label">
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="milk" value="1">Молоко
             </label>
-            <label>
-              <input class="visually-hidden form__input-checkbox" type="checkbox" name="vitamins" value="1">Витамины
+            <label class="form__label">
+              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="vitamins" value="1">Витамины
             </label>
               </li>
             </ul>
@@ -99,13 +99,14 @@
     </main>
 
     <footer class="footer">
-      <section class="address">
+      <section class="address address--background">
         <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
         <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </section>
+      <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
       <iframe class="footer__map" src="https://via.placeholder.com/150x150" width="320" height="362" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       <a class="footer__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="Интернет-магазин фитнес питания для котов «Cat Energy»">
+        <img src="img/logo-footer.svg" width="128" height="24" alt="Интернет-магазин фитнес питания для котов «Cat Energy»">
       </a>
 
       <div class="footer__social social">
