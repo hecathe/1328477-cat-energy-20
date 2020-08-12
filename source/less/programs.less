@@ -1,6 +1,11 @@
 .programs {
   margin-right: 20px;
   margin-left: 20px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programs__block {
@@ -8,6 +13,10 @@
   padding-left: 18px;
   padding-bottom: 18px;
   background-color: @color-grey;
+
+  @media (min-width: @desktop-width) {
+    max-width: 570px;
+  }
 }
 
 .programs__title {

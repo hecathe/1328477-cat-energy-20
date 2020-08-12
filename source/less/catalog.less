@@ -7,6 +7,35 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 140px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 144px;
+  }
+}
+
+.catalog__item {
+  @media (min-width: @tablet-width) {
+    padding-right: 37px;
+    padding-bottom: 40px;
+    padding-left: 39px;
+    background-color: @color-grey;
+  }
+}
+
+.catalog__item--more {
+  @media (min-width: @tablet-width) {
+    background: none;
+    border: 2px solid @color-grey;
+  }
 }
 
 .catalog__subtitle {
