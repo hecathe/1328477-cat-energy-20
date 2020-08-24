@@ -15,7 +15,13 @@
   margin: 0;
   list-style: none;
 
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   @media (min-width: @desktop-width) {
+    display: flex;
     justify-content: space-between;
   }
 }
@@ -29,7 +35,8 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    max-width: 270px;
+    max-width: 230px;
     padding: 0;
+    padding-top: 151px;
   }
 }

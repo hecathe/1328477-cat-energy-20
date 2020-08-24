@@ -7,6 +7,17 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    width: 440px;
+  }
+}
+
+.nav-list__item--active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @color-lightgreen;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-color: @color-white;
   }
 }
 
@@ -17,4 +28,21 @@
   text-decoration: none;
   text-transform: uppercase;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: @color-white;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
