@@ -14,11 +14,28 @@
   margin: 0;
 }
 
+.additional__item {
+  border-top: 1px solid @color-specialgrey;
+  border-bottom: 1px solid @color-specialgrey;
+  padding-top: 11px;
+  padding-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 38px;
+    padding-left: 38px;
+    border: 1px solid @color-specialgrey;
+    box-sizing: border-box;
+  }
+}
+
 .additional__subtitle {
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: @color-darkgrey2;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 13px;
 }
 
 .additional__price-list {
@@ -26,6 +43,7 @@
   justify-content: space-between;
   padding: 0;
   margin: 0;
+  margin-bottom: 15px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
