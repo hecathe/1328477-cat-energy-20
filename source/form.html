@@ -33,7 +33,7 @@
       <h1 class="visually-hidden">Страница формы</h1>
       <section class="program-filter">
         <h2 class="program-filter__title title">Подбор программы</h2>
-        <p class="program-filter__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="program-filter__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         <form class="program-filter__form form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form__fieldset form__fieldset--questionary">
             <legend class="visually-hidden">Укажите данные</legend>
@@ -63,12 +63,14 @@
 
           <fieldset class="form__fieldset form__fieldset--contacts">
             <legend class="form__subtitle">Контактные данные (владельца кота)</legend>
-            <label class="form__label">E-mail:*
-              <input class="form__input form__input--email-field" type="email" name="email" placeholder="kuklachev@gmail.com">
-            </label>
-            <label class="form__label">Телефон:*
-              <input class="form__input form__input--tel-field" type="tel" name="tel" placeholder="8 (960) 900-60-90">
-            </label>
+            <div class="form__wrapper">
+              <label class="form__label">E-mail:*
+                <input class="form__input form__input--email-field" type="email" name="email" placeholder="kuklachev@gmail.com">
+              </label>
+              <label class="form__label">Телефон:*
+                <input class="form__input form__input--tel-field" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--comment">
@@ -78,20 +80,21 @@
 
           <fieldset class="form__fieldset form__fieldset--additional">
             <legend class="form__subtitle">Дополнительно</legend>
-            <label class="form__label">
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="sweetener" value="1" checked>Сахарозаменитель
-            </label>
-            <label class="form__label">
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="water" value="1">Питьевая вода
-            </label>
-            <label class="form__label">
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="milk" value="1">Молоко
-            </label>
-            <label class="form__label">
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="vitamins" value="1">Витамины
-            </label>
-              </li>
-            </ul>
+            <div class="form__wrap">
+              <label class="form__label">
+                <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="sweetener" value="1" checked>Сахарозаменитель
+              </label>
+              <label class="form__label">
+                <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="water" value="1">Питьевая вода
+              </label>
+              <label class="form__label">
+                <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="milk" value="1">Молоко
+              </label>
+              <label class="form__label">
+                <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="vitamins" value="1">Витамины
+              </label>
+            </div>
+
           </fieldset>
           <button class="form__btn button" type="submit">Отправить заявку</button>
         </form>
@@ -100,9 +103,9 @@
     </main>
 
     <footer class="footer">
-      <section class="address">
-        <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <section class="address address--background">
+        <h3 class="address__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>
+        <p class="address__text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
       </section>
       <div class="map">
         <iframe class="map__link" src="https://via.placeholder.com/150x150" width="320" height="362" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>

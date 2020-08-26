@@ -1,8 +1,26 @@
 .address {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-right: 19px;
   padding-left: 19px;
   background-color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 calc(50% - 330px);
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 570px;
+    min-height: 201px;
+    top: 95px;
+    left: 110px;
+    padding: 0 calc(50% - 720px);
+  }
 }
 
 .advantages__title {
@@ -17,8 +35,20 @@
   font-size: 14px;
   line-height: 20px;
   color: @color-darkgrey;
+
+  @media (min-width: @tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+  }
 }
 
 .address--background {
   background-color: transparent;
+
+  @media (min-width: @desktop-width) {
+    background-color: @color-white;
+  }
 }

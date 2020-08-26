@@ -6,6 +6,10 @@
   overflow-x: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -27,6 +31,11 @@ img {
 .title {
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .button {

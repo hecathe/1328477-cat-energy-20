@@ -1,3 +1,12 @@
+.form {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 69px;
+  }
+}
+
 .form__label,
 .form__input,
 .form__comment-field {
@@ -6,17 +15,36 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @color-darkgrey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 /*.form__input::-moz-placeholder {
   color: @color-darkgrey;
 }*/
 
+.form__label {
+  display: flex;
+  align-items: center;
+}
+
+.form__input {
+  height: 45px;
+  flex-grow: 1;
+  margin-left: 14px;
+  padding-left: 15px;
+  border: 1px solid @color-blgrey;
+}
+
 .form__input::placeholder {
   color: @color-darkgrey;
 }
 
 .form__fieldset {
+  display: flex;
   padding: 0;
   margin: 0;
   border: none;
@@ -25,17 +53,186 @@
 .form__subtitle {
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-.form__program .form__label {
+/*questionary*/
+
+.form__fieldset--questionary {
+  margin-bottom: 27px;
+}
+
+.form__fieldset--questionary .form__label:not(:last-of-type) {
+  margin-bottom: 13px;
+}
+
+/*program*/
+
+.form__fieldset--program {
+  padding-top: 20px;
+  padding-bottom: 22px;
+  border-top: 1px solid @color-bordergrey;
+  border-bottom: 1px solid @color-bordergrey;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @color-blgrey;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.form__fieldset--program .form__label {
+  padding-left: 45px;
   color: @color-darkgrey2;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 87.89px;
+  }
 }
 
-.form__additional .form__label {
+.form__fieldset--program .form__label:not(:last-of-type) {
+  margin-bottom: 13px;
+}
+
+/*contacts*/
+
+.form__fieldset--contacts {
+  margin-top: 26px;
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin: 0;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+  }
+}
+
+.form__fieldset--contacts .form__subtitle {
+  margin-bottom: 32px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.form__fieldset--contacts .form__label:not(:last-of-type) {
+  margin-bottom: 14px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+/*comment*/
+
+.form__fieldset--comment {
+  margin-top: 27px;
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin: 0;
+  }
+}
+
+.form__fieldset--comment .form__subtitle {
+  margin-bottom: 34px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.form__comment-field {
+  width: 100%;
+  height: 150px;
+  padding-top: 13px;
+  padding-right: 12px;
+  padding-left: 15px;
+  border: 1px solid @color-blgrey;
+
+  @media (min-width: @tablet-width) {
+    height: 174px;
+  }
+}
+
+/*additional*/
+
+.form__fieldset--additional {
+  margin-top: 27px;
+  margin-bottom: 34px;
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin: 0;
+  }
+}
+
+.form__fieldset--additional .form__subtitle {
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 57px;
+  }
+}
+
+.form__wrap {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.form__fieldset--additional .form__label {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 44px;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 66px;
+  }
+}
+
+.form__fieldset--additional .form__label:not(:last-of-type) {
+  margin-bottom: 13px;
 }
 
 .form__btn {
   width: 100%;
+  padding: 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+  }
 }
