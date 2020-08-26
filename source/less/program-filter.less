@@ -1,16 +1,45 @@
 .program-filter {
   margin-right: 20px;
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 72px;
+    padding: 0 calc(50% - 344px);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 calc(50% - 620px);
+  }
 }
 
 .program-filter__text {
-  font-style: 14px;
+  font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 66px;
+  }
 }
 
 .program-filter__small {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 1460px;
+    left: 60%;
+    font-size: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 1400px;
+  }
 }

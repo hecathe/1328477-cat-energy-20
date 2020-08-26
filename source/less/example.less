@@ -1,5 +1,10 @@
 .example {
   background-color: @color-bggrey;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0 calc(50% - 650px);
+  }
 }
 
 .example__title {
