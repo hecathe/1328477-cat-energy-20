@@ -1,4 +1,5 @@
 .programs {
+  margin-top: 22px;
   margin-right: 20px;
   margin-left: 20px;
 
@@ -12,10 +13,16 @@
 }
 
 .programs__block {
+  padding-top: 30px;
   padding-right: 20px;
   padding-left: 18px;
   padding-bottom: 18px;
+  margin-bottom: 20px;
   background-color: @color-grey;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   @media (min-width: @desktop-width) {
     width: 570px;
@@ -23,9 +30,49 @@
 }
 
 .programs__title {
+  position: relative;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  padding-left: 73px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -5px;
+    left: 0;
+    background-color: @color-lightgreen;
+    border-radius: 50%;
+  }
+}
+
+.programs__title--slimming {
+  &:after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 50px;
+    top: -8px;
+    left: 7px;
+    background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
+  }
+}
+
+.programs__title--weight {
+  &:after {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    top: 6px;
+    left: -9.5px;
+    background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
+  }
 }
 
 .programs__text {
@@ -33,14 +80,28 @@
   font-size: 14px;
   line-height: 18px;
   padding: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid @color-bordergrey;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .programs__link {
+  position: relative;
   font-size: 16px;
   font-weight: 600;
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
   color: @color-black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    top: 6px;
+    right: -39px;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
+  }
 }

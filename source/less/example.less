@@ -1,4 +1,6 @@
 .example {
+  padding-top: 27px;
+  padding-bottom: 25px;
   background-color: @color-bggrey;
 
   @media (min-width: @desktop-width) {
@@ -10,45 +12,65 @@
 .example__title {
   font-size: 36px;
   line-height: 40px;
+  padding: 0;
+  margin: 0;
   margin-right: 21px;
   margin-left: 20px;
+  margin-bottom: 33px;
 }
 
 .example__text {
+  width: 279px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: @color-darkgrey;
-  margin-right: 21px;
-  margin-left: 20px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .results {
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  margin: 0;
   margin-right: 21px;
   margin-left: 20px;
+  margin-bottom: 34px;
 }
 
 .results__item {
+  width: 124px;
+  height: 56px;
   border: 1px solid @color-specialgrey;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .results__how-much {
   font-size: 24px;
   line-height: 24px;
+  margin-top: 14px;
 }
 
 .results__desc {
+  width: 82px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: @color-darkgrey;
+  padding: 0;
+  margin: 9px auto 0;
+  background-color: @color-bggrey;
+  white-space: normal;
 }
 
 .example__total-cost {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 42px;
 }

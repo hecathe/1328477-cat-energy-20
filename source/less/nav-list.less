@@ -11,6 +11,12 @@
   }
 }
 
+.nav-list__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-top: 1px solid @color-headerborder;
+}
+
 .nav-list__item--active {
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid @color-lightgreen;
@@ -38,11 +44,5 @@
     font-size: 20px;
     line-height: 30px;
     color: @color-white;
-  }
-}
-
-.main-nav__toggle {
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 }

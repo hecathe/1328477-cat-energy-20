@@ -1,6 +1,8 @@
 .advantages {
-  margin-right: 21px;
-  margin-left: 20px;
+  padding-top: 27px;
+  padding-right: 21px;
+  padding-left: 20px;
+  padding-bottom: 42px;
 
   @media (min-width: @desktop-width) {
     margin: 0;
@@ -32,16 +34,93 @@
 }
 
 .advantages__item {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: @color-darkgrey;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
   padding-left: 80px;
   margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: @color-lightgreen;
+  }
 
   @media (min-width: @tablet-width) {
     max-width: 230px;
     padding: 0;
     padding-top: 151px;
   }
+}
+
+.advantages__item--leaf {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 52px;
+    top: 4px;
+    left: 5px;
+    background: url("../img/advantage-leaf@1x.png") no-repeat 0 0;
+    background-size: contain;
+  }
+}
+
+.advantages__item--powder {
+  white-space: nowrap;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 52px;
+    top: 4px;
+    left: 5px;
+    background: url("../img/advantage-powder@1x.png") no-repeat 0 0;
+    background-size: contain;
+  }
+}
+
+.advantages__item--dining {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 52px;
+    top: 4px;
+    left: 5px;
+    background: url("../img/advantage-dining@1x.png") no-repeat 0 0;
+    background-size: contain;
+  }
+}
+
+.advantages__item--clock {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 52px;
+    top: 4px;
+    left: 5px;
+    background: url("../img/advantage-clock@1x.png") no-repeat 0 0;
+    background-size: contain;
+  }
+}
+
+.advantages__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: @color-darkgrey;
+  padding: 0;
+  margin: 0;
 }

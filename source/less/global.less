@@ -31,6 +31,8 @@ img {
 .title {
   font-size: 36px;
   line-height: 36px;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -48,4 +50,12 @@ img {
   text-transform: uppercase;
   color: @color-white;
   background-color: @color-lightgreen;
+
+  &:hover {
+    background-color: @color-basic-green2;
+  }
+
+  &:active {
+    color: @color-white-rgba;
+  }
 }

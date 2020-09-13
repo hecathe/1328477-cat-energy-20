@@ -1,0 +1,20 @@
+.main-nav {
+  display: none;
+  width: 100%;
+  background-color: @color-white;
+  z-index: 1;
+
+  &.active {
+    display: block;
+    transition: all 0.3s ease 0s;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    background: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

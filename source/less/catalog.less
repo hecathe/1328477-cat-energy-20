@@ -1,6 +1,11 @@
 .catalog {
-  margin-right: 20px;
-  margin-left: 20px;
+  padding-top: 27px;
+  border-top: 1px solid @color-headerborder;
+}
+
+.catalog__title {
+  margin-bottom: 41px;
+  text-align: center;
 }
 
 .catalog__list {
@@ -24,9 +29,10 @@
 
 .catalog__item {
   padding-top: 19px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 25px;
   border-top: 1px solid @color-specialgrey;
-  /*border-bottom: 1px solid @color-specialgrey;*/
 
   @media (min-width: @tablet-width) {
     text-align: center;
@@ -35,6 +41,23 @@
     padding-left: 39px;
     background-color: @color-grey;
   }
+}
+
+.catalog__item--more {
+  text-align: center;
+  padding-top: 26px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    border: 2px solid @color-grey;
+  }
+}
+
+.catalog__svg {
+  margin-bottom: 20px;
 }
 
 .catalog__wrap {
@@ -47,31 +70,21 @@
   }
 }
 
-.catalog__item--more {
-  text-align: center;
-  padding-top: 53px;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: none;
-    border: 2px solid @color-grey;
-  }
-}
-
 .catalog__subtitle {
+  width: 76px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: @color-darkgrey2;
   padding: 0;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
 }
 
-.catalog__subtitle:not(:last-of-type) {
-  width: 76px;
+.catalog__subtitle--color {
+  width: 100%;
+  color: @color-black2;
+  margin-bottom: 8px;
 }
 
 .catalog__product-info {
@@ -79,15 +92,13 @@
   font-size: 12px;
   line-height: 16px;
   color: @color-darkgrey;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog__product-wrapper {
   display: flex;
   justify-content: space-between;
-}
-
-.catalog__subtitle--color {
-  color: @color-black2;
 }
 
 .catalog__text {
@@ -103,4 +114,12 @@
 .catalog__to-all {
   color: @color-darkgrey;
   background-color: @color-grey;
+
+  &:hover {
+    background-color: @color-hover-grey;
+  }
+
+  &:active {
+    color: @color-darkgrey-rgba;
+  }
 }

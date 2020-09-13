@@ -1,8 +1,44 @@
 .social__list {
   display: flex;
+  justify-content: center;
   list-style: none;
+  padding: 0;
+  padding: 20px 0 21px;
+  margin: 0;
+  margin-top: 32px;
+  margin-bottom: 22px;
+  border-top: 1px solid @color-bordergrey;
+  border-bottom: 1px solid @color-bordergrey;
 }
 
-.social__link {
-  text-decoration: none;
+.social__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-of-type) {
+    margin-right: 33px;
+  }
+}
+
+.social__svg {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__svg--vkontakte,
+.social__svg--instagram {
+  fill: @color-specialgrey-2;
+
+  &:hover {
+    fill: @color-lightgreen;
+  }
+}
+
+.social__svg--facebook {
+  stroke: @color-specialgrey-2;
+
+  &:hover {
+    stroke: @color-lightgreen;
+  }
 }
